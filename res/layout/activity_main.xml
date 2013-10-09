@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button_percent_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="82dp"
+        android:onClick="calculateTip"
+        android:text="10%" />
+
+    <Button
+        android:id="@+id/button_percent_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_percent_10"
+        android:layout_alignBottom="@+id/button_percent_10"
+        android:layout_toRightOf="@+id/button_percent_10"
+        android:onClick="calculateTip"
+        android:text="15%" />
+
+    <Button
+        android:id="@+id/button_percent_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_percent_15"
+        android:layout_alignBottom="@+id/button_percent_15"
+        android:layout_toRightOf="@+id/button_percent_15"
+        android:onClick="calculateTip"
+        android:text="20%" />
+
+    <EditText
+        android:id="@+id/editText_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textView_label_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_percent_10"
+        android:text="Tip is: $" />
+
+    <TextView
+        android:id="@+id/textView_tip_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_label_tip"
+        android:layout_alignBottom="@+id/textView_label_tip"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/textView_label_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_label_tip"
+        android:text="Tip is: $" />
+
+    <TextView
+        android:id="@+id/textView_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_label_total"
+        android:layout_alignBottom="@+id/textView_label_total"
+        android:text="" />
+
+</RelativeLayout>
